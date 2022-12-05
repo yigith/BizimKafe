@@ -39,9 +39,9 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboMasaNo = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnTasi = new System.Windows.Forms.Button();
             this.lblMasaNo = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblOdemeTutari = new System.Windows.Forms.Label();
@@ -162,15 +162,15 @@
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
             // 
-            // comboBox1
+            // cboMasaNo
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(616, 27);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 23);
-            this.comboBox1.TabIndex = 8;
+            this.cboMasaNo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cboMasaNo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMasaNo.FormattingEnabled = true;
+            this.cboMasaNo.Location = new System.Drawing.Point(616, 27);
+            this.cboMasaNo.Name = "cboMasaNo";
+            this.cboMasaNo.Size = new System.Drawing.Size(121, 23);
+            this.cboMasaNo.TabIndex = 8;
             // 
             // label3
             // 
@@ -181,15 +181,16 @@
             this.label3.Size = new System.Drawing.Size(0, 15);
             this.label3.TabIndex = 7;
             // 
-            // button1
+            // btnTasi
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(743, 27);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "TAŞI";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnTasi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTasi.Location = new System.Drawing.Point(743, 27);
+            this.btnTasi.Name = "btnTasi";
+            this.btnTasi.Size = new System.Drawing.Size(75, 23);
+            this.btnTasi.TabIndex = 9;
+            this.btnTasi.Text = "TAŞI";
+            this.btnTasi.UseVisualStyleBackColor = true;
+            this.btnTasi.Click += new System.EventHandler(this.btnTasi_Click);
             // 
             // lblMasaNo
             // 
@@ -290,8 +291,8 @@
             this.Controls.Add(this.lblOdemeTutari);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblMasaNo);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.btnTasi);
+            this.Controls.Add(this.cboMasaNo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dgvSiparisDetaylar);
             this.Controls.Add(this.btnEkle);
@@ -317,9 +318,9 @@
         private NumericUpDown nudAdet;
         private Button btnEkle;
         private DataGridView dgvSiparisDetaylar;
-        private ComboBox comboBox1;
+        private ComboBox cboMasaNo;
         private Label label3;
-        private Button button1;
+        private Button btnTasi;
         private Label lblMasaNo;
         private Label label5;
         private Label lblOdemeTutari;
